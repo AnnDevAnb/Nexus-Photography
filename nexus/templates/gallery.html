@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS PHOTOGRAPHY GALLERY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery-img:hover {
+      transform: scale(1.30);
+    }
+    h2{color:  #BB9E77;}
+    p{color: #BB9E77;text-align: center;}
+    .btn{color: antiquewhite;background-color: #BB9E77;margin-left: 1400px;margin-bottom: 10px;text-align: center;}
+    .btn:hover {
+  color: #fff;            
+  background-color:tan; 
+}
+.spinner-border{color: #BB9E77;}
+
+    
+  </style>
+
+</head>
+<body>
+
+  <div class="container py-5">
+    <h2 class="text"> <strong> <em>Timeless Frames</em></strong></h2> <br>
+    <div class="row g-4">
+   
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/1.png' %}" alt="Gallery Image 1" class="gallery-img">
+      </div>
+     
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/2.png' %}" alt="Gallery Image 2" class="gallery-img">
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/3.png' %}" alt="Gallery Image 3" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/4.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+       <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/5.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+    
+       <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/6.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/7.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/8.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/9.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/10.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/11.png' %}" alt=" Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/12.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/13.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/14.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/15.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="{% static 'images/16.png' %}" alt="Gallery Image 4" class="gallery-img">
+      </div> 
+
+      <div class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden"></span>
+  </div>
+</div>
+
+
+      <p><em>Each photograph narrates a tale, preserving ephemeral moments as enduring memories. Through Timeless Frames, 
+        we encapsulate emotions, expressions, and intricacies that linger in the heart for eternity. Every frame transcends 
+        a mere image it becomes a cherished heirloom, inviting you to relive its essence across a lifetime.</em> </p>
+    <p> </p>
+    </div>
+
+  </div>
+
+  <a href="javascript:history.back()" class="btn">Back</a>
+
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

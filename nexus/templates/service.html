@@ -1,0 +1,120 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS PHOTOGRAPHY SERVICES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  body{background-image: url({% static 'images/bg.png' %});background-size:contain;}
+
+h1{font-size:35px;text-align: center;color: #968753;margin-top: 5%;}
+p{color: #BB9E77; margin: 5%;font-size: 20px;}
+.background{background-color: black;padding: 15px;}
+.card {padding: 5%;border-radius: 30px;}
+.card .card-body{background-color: #BB9E77;}
+.col .card{background-image: url({% static 'images/bck.png' %});}
+.card-body .card-title {color: antiquewhite;}
+.card-body .card-text{color: antiquewhite;}
+.card-title{text-align: center;}
+.btn{color: antiquewhite;background-color: #BB9E77;margin-left: 1400px;margin-bottom: 10px;text-align: center;}
+    .btn:hover {
+  color: #fff;            
+  background-color:tan; 
+}
+
+</style>
+</head>
+<body>
+
+<h1> <strong> <em> What We Offer </em></strong></h1> 
+<p> <em>Explore our thoughtfully crafted Gold, Silver, and Premium packages designed to suit every need. From capturing the 
+    innocence of babies, the joy of birthdays, to creating striking modeling portfolios, our services combine creativity, 
+    quality, and personalized attention to turn every moment into a lasting memory. Each package is tailored to provide a 
+    seamless experience, with professional setups, expert guidance, and a focus on bringing out the unique personality and
+     emotions of every subject. Whether it’s a candid smile, a milestone celebration, or a fashion-forward pose, we ensure
+      every shot tells a beautiful story you’ll cherish forever.</em></p>
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src={% static 'images/basic.png' %} class="card-img-top" alt="basic">
+      <div class="card-body">
+        <h5 class="card-title"> <strong>Silver Wedding Package</strong></h5>
+        <p class="card-title"> <em> ( Basic wedding coverage )</em>  </p>
+        <p class="card-text">Covers 4–5 hours of wedding photography, focusing on candid moments, group and family portraits,
+             and key ceremony highlights. Perfect for couples looking for essential coverage, this package ensures your most meaningful
+              moments are beautifully preserved, with all edited photos delivered conveniently through a private online gallery.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src={% static 'images/gold.png' %} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Gold Wedding Package</strong></h5>
+        <p class="card-title"> <em> ( Comprehensive coverage )</em>  </p>
+        <p class="card-text">Includes up to 8 hours of photography and videography, from candid shots and
+             family portraits to full ceremony highlights. This package also features a stylish pre-wedding shoot and cinematic
+              drone coverage. All edited photos and videos will be professionally
+              curated and delivered digitally, ensuring a complete and detailed documentation of your big day</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src={% static 'images/premium.png' %} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Premium Wedding Package</strong></h5>
+        <p class="card-title"> <em> ( Luxury all-inclusive coverage )</em> </p>
+        <p class="card-text"> Our Premium Package offers a luxury all-inclusive experience with full-day wedding coverage,
+             ensuring no moment is missed. It includes elegant pre- and post-wedding shoots, cinematic storytelling through 
+             drone videography, and a beautifully crafted printed album. Along with this, you’ll receive a complete digital
+              gallery of all edited photos and videos.</p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col">
+    <div class="card">
+      <img src={% static 'images/baby.png' %} class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title"> <STRong>Baby Photoshoot</STRong></h5>
+        <p class="card-text">Capturing the innocence and charm of little ones through playful themes, creative setups and natural
+           expressions, we preserve every tiny smile and candid moment as a timeless memory.
+           while turning fleeting milestones into cherished keepsakes for families.Reflect the pure joy and wonder of childhood.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src={% static 'images/bday.png' %} class="card-img-top" alt="baby">
+      <div class="card-body">
+        <h5 class="card-title"> <STrong>Birthday Photoshoot</STrong></h5>
+        <p class="card-text">TCelebrate your child’s special day with a fun and vibrant birthday photoshoot.
+            From playful decorations and themed setups to candid laughter and joyful moments, we capture every smile,
+             hug, and sparkle of excitement, turning the birthday memories into keepsakes that last a lifetime.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src={% static 'images/model.png' %} class="card-img-top" alt="model">
+      <div class="card-body">
+        <h5 class="card-title"> <strong>Modeling Portfolio</strong></h5>
+        <p class="card-text">Showcase your unique style and personality with a professional modeling portfolio.
+             From striking poses and creative concepts to high-quality portraits, we capture images that highlight your versatility,
+             confidence, and charisma, helping you make a strong impression in the modeling industry.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="javascript:history.back()" class="btn">Back</a>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

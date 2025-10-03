@@ -1,0 +1,165 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+  .navbar .nav-link:hover {
+    color: #d1bd7b;  
+    border-radius: 5px;  
+    transition: 0.3s;
+  }
+  .navbar{background-color:rgb(255, 255, 255)}
+  .navbar .nav-link{ color:#968753;}
+  .navbar-brand img{width: auto;height:80px;}
+  .carousel-inner img{width:auto; height: 70}
+  .text-center{color: #968753;}
+  
+  
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+   <a class="navbar-brand"> <img src="{% static 'images/logo.png' %}" alt="logo"> </a>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="/service/">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="/gallery/">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/c1.png' %}" class="d-block w-100" alt="frontpageimage">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/c2.png' %}" class="d-block w-100" alt="frontpageimage">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/c3.png' %}" class="d-block w-100" alt="frontpageimage">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div id="about" class="container my-5">
+  <h1 class="text-center">About Us</h1>
+  <p class="text-center fs-5" style="line-height: 1.5;">
+    At <strong>Nexus Wedding Photography</strong>, we believe every wedding is a story waiting to be told
+    filled with laughter, emotions, and timeless memories. Based in 
+    <strong>Trivandrum</strong>, we specialize in capturing the magic of love in its purest form, 
+    creating photographs you will cherish for a lifetime. Led by <strong>Miss Ann Dev Anb </strong> and managed by <strong>K. B. Deva Anbu (Cinematographer)</strong>, 
+    our team brings together creativity, passion, and professionalism to deliver images that speak beyond words. 
+    From intimate candid moments to grand celebrations, we focus on every detail that makes your wedding truly unique. For us, photography 
+    isn’t just about pictures it’s about preserving the essence of your journey, your bond, 
+    and the unforgettable moments that bring everyone together.
+  </p>
+</div>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Team</h2>
+  <div class="row justify-content-center">
+    
+    
+    <div class="col-md-4 text-center mb-4">
+      <img src="{% static 'images/anbu.png' %}" class="rounded-circle img-fluid" alt="anbu" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="mt-3">Mr. K B Deva Anbu </h5>
+      <p>CEO of Nexus Photography</p>
+    </div>
+    
+  
+    <div class="col-md-4 text-center mb-4">
+      <img src="{% static 'images/ann.png' %}"class="rounded-circle img-fluid" alt="ann" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="mt-3">Miss Ann Dev Anb </h5>
+      <p> Director of Nexus Photography</p>
+    
+    </div>
+    
+    
+    <div class="col-md-4 text-center mb-4">
+      <img src="{% static 'images/abel.png' %}" class="rounded-circle img-fluid" alt="abelDeva Anbu" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="mt-3">Mr. Abel Deva Anbu</h5>
+      <p>Drone Operator</p>
+    </div>
+  
+    <div class="col-md-4 text-center mb-4">
+      <img src="{% static 'images/jibin.png' %}" class="rounded-circle img-fluid" alt="abelDeva Anbu" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="mt-3">Mr. Jibin Sam</h5>
+      <p>Videography Head</p>
+    </div>
+  
+    <div class="col-md-4 text-center mb-4">
+      <img src="{% static 'images/solomon.png' %}" class="rounded-circle img-fluid" alt="abelDeva Anbu" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="mt-3">Mr. Solomon George</h5>
+      <p>Photography Head</p>
+    </div>
+  
+    <div class="col-md-4 text-center mb-4">
+      <img src="{% static 'images/job.jpg' %}" class="rounded-circle img-fluid" alt="abelDeva Anbu" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="mt-3">Mr. Job Sujith</h5>
+      <p>Editor/Designer</p>
+    </div>
+  
+   
+  <a href="javascript:history.back()" class="btn">Back</a>
+
+
+</div>
+
+<footer>
+  <footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      
+    
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase" style="color:#968753;">Nexus Wedding Photography</h5>
+        <p style="color:#555;">
+          Capturing the magic of love in its purest form. Based in Trivandrum. 
+          Preserving timeless memories through photography and cinematography.
+        </p>
+      </div>
+      
+    
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase" style="color:#968753;">Contact</h5>
+        <ul class="list-unstyled mb-0">
+          <li><p style="color:#555;">Phone: +91 9876543210</p></li>
+          <li><p style="color:#555;">Email: info@nexusphotography.com</p></li>
+          <li><p style="color:#555;">Location: Trivandrum, Kerala, India</p></li>
+        </ul>
+      </div>
+      
+    
+    </div>
+  </div>
+  
+  <div class="text-center p-15" style="background-color: #f8f9fa; color:#968753;">
+    © 2025 Nexus Wedding Photography. All Rights Reserved.
+  </div>
+</footer>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

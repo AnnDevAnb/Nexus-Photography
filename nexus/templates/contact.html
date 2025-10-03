@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  h1{margin-top: 20px;color:#968753;font-size: 20px;margin-left: 60px;}
+  .form{margin-left: 150px;}
+  .inside{width: 10px; height: 5px;}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+   
+  
+    form {
+      margin-left: 50px;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #968753;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #7a6c3d;
+    
+}
+ul{text-decoration: none;color: #333;}
+body{background-image: url({% static 'images/team.png' %});background-size:cover;}
+</style>
+  </head>
+<body>
+
+  <h1><em>Enquiry Form</em></h1>
+
+  {% if messages %}
+  <ul  style="list-style: none; padding: 0; margin: 0;">
+    {% for message in messages %}
+      <li style="color:#333; margin-bottom: 10px;">{{ message }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<form method="POST" action="{% url 'enquiry' %}">
+    {% csrf_token %}
+
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number"><br>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+    <footer>
+  <footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      
+    
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase" style="color:#968753;">Nexus Wedding Photography</h5>
+        <p style="color:#555;">
+          Capturing the magic of love in its purest form. Based in Kochi, Kadavanthara. 
+          Preserving timeless memories through photography and cinematography.
+        </p>
+      </div>
+      
+    
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase" style="color:#968753;">Contact</h5>
+        <ul class="list-unstyled mb-0">
+          <li><p style="color:#555;">Phone: +91 9876543210</p></li>
+          <li><p style="color:#555;">Email: info@nexusphotography.com</p></li>
+          <li><p style="color:#555;">Location: Trivandrum, Kerala, India</p></li>
+        </ul>
+      </div>
+      
+    
+    </div>
+  </div>
+  
+  <div class="text-center p-15" style="background-color: #f8f9fa; color:#968753;">
+    © 2025 Nexus Wedding Photography. All Rights Reserved.
+  </div>
+</footer>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
