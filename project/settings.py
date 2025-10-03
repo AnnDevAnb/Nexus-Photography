@@ -30,7 +30,9 @@ SECRET_KEY = 'nexus_1997'
 DEBUG = False
 
 ALLOWED_HOSTS = ['nexus-photography.onrender.com' ,  '127.0.0.1']
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://nexus-photography.onrender.com", 
+]
 
 # Application definition
 
