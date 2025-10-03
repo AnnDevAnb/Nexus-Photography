@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j(h^z$20doztnfxfmi_qunwdq&(426$=de42c0!@)81!)p2u3y'
+SECRET_KEY = os.getenv("SECRET_KEY", 'fallback-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ['.onrender.com']
 
@@ -106,11 +106,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-if os.getenv("DATABASE_URL"):  # On Render or production
+if os.getenv("DATABASE_URL"):  # Render production
     DATABASES = {
         'default': dj_database_url.config(default=os.getenv("DATABASE_URL"))
     }
-else:  # Local development (SQLite)
+else:  # Local SQLite
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
